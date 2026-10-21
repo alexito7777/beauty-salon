@@ -1,9 +1,14 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>Beauty Salon by Mercy</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M9 5V27M9 5H17A5.5 5.5 0 0 1 17 16H9M17 16A5.5 5.5 0 0 1 17 27H9' fill='none' stroke='%23E8579B' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="data:image/svg+xml, &3Csvg xmlns= 'https://www.google.com/imgres?q=favicon%20de%20letra%20b&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F11813%2F11813412.png&imgrefurl=https%3A%2F%2Fwww.flaticon.es%2Ficono-gratis%2Fletra-b_11813412&docid=kPQNcFX9mghTcM&tbnid=yi263yPxIIZyhM&vet=12ahUKEwiYsJHbzMqXAxUZVkEAHfRCINkQnPAOegQIVxAA..i&w=512&h=512&hcb=2&ved=2ahUKEwiYsJHbzMqXAxUZVkEAHfRCINkQnPAOegQIVxAA'
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400;1,6..96,500&family=Figtree:wght@400;500;600&display=swap">
 <style>
 /* Layout: una sola página. Portada con arco para la foto, tira de valoraciones, servicios en cuatro grupos,
@@ -81,9 +86,13 @@ a{color:inherit}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.75rem}
 .logo{font-family:var(--display);font-size:1.25rem;text-decoration:none;white-space:nowrap}
 .logo em{color:var(--accent)}
+.logo{display:block;color:var(--fg)}
+.logo-img{display:block;height:46px;width:auto;overflow:visible}
+.lg-a{fill:var(--accent)}
 .nav{display:flex;align-items:center;gap:1.6rem}
 .nav a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--muted)}
 .nav a:hover{color:var(--fg)}
+.nav a.btn{color:var(--on-accent)}
 .btn{
   display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
   background:var(--accent);color:var(--on-accent);text-decoration:none;font-weight:600;font-size:.95rem;
@@ -141,6 +150,7 @@ a{color:inherit}
 /* Precios */
 .price-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(2rem,5vw,4rem);align-items:start}
 .price-side{display:grid;gap:1.4rem}
+.price-wrap>*{min-width:0}
 .table-box{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:16px}
 table{width:100%;border-collapse:collapse;font-size:.98rem}
 th,td{padding:1rem 1.2rem;text-align:left;border-bottom:1px solid var(--line)}
@@ -208,9 +218,11 @@ footer a{color:var(--accent)}
 }
 </style>
 
+</head>
+<body>
 <header class="top">
   <div class="wrap">
-    <a class="logo" href="#inicio">Beauty Salon <em>by Mercy</em></a>
+    <a class="logo" href="#inicio" aria-label="Beauty Salon by Mercy, inicio"><svg xmlns="http://www.w3.org/2000/svg" class="logo-img" viewBox="-4 0 348 110" role="img" aria-label="Beauty Salon by Mercy"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><g transform="translate(0 0)"><path d="M1 6V40M1 6H12A7.5 7.5 0 0 1 12 21H1M1 21H13A9.5 9.5 0 0 1 13 40H1"/></g><g transform="translate(32 0)"><path d="M1 30H21A10 10 0 1 0 18 37"/></g><g transform="translate(64 0)"><path d="M1 30A10 10 0 1 1 21 30A10 10 0 1 1 1 30M21 20V40"/></g><g transform="translate(96 0)"><path d="M1 20V30A10 10 0 0 0 21 30M21 20V40"/></g><g transform="translate(128 0)"><path d="M7 8V34Q7 40 13 40M0 20H15"/></g><g transform="translate(153 0)"><path d="M1 20V30A10 10 0 0 0 21 30M21 20V45Q21 54 11 54"/></g><g transform="translate(205 0)"><path d="M21 11C18 7 13 6 10 6C4 6 1 9 1.5 13C2.5 18 8 20 12 22C18 24 22 27 21 32C20 38 14 40 10 40C5 40 1 38 0 34"/></g><g transform="translate(237 0)"><path d="M1 30A10 10 0 1 1 21 30A10 10 0 1 1 1 30M21 20V40"/></g><g transform="translate(269 0)"><path d="M1 6V40"/></g><g transform="translate(281 0)"><path d="M1 30A10 10 0 1 1 21 30A10 10 0 1 1 1 30"/></g><g transform="translate(313 0)"><path d="M1 20V40M1 30A10 10 0 0 1 21 30V40"/></g></g><g transform="translate(153 0)"><path d="M23 19C22 11 27 5 37 3C38 12 32 19 23 19Z" class="lg-a"/><path d="M25 17C28 12 31 8 35 5" fill="none" style="stroke:var(--bg)" stroke-width="1" stroke-linecap="round" opacity=".7"/></g><defs><linearGradient id="lg-g" x1="0" x2="1"><stop offset="0" style="stop-color:var(--accent)" stop-opacity="0"/><stop offset=".5" style="stop-color:var(--accent)"/><stop offset="1" style="stop-color:var(--accent)" stop-opacity="0"/></linearGradient></defs><path d="M70 70L276 62" stroke="url(#lg-g)" stroke-width="1.6" stroke-linecap="round" fill="none"/><path d="M170 66.5l1.4-4 1.4 4 4 1.4-4 1.4-1.4 4-1.4-4-4-1.4z" class="lg-a"/><g transform="translate(136 94) scale(.62)" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M0 4C5-4 11-20 10-30C9.500-35 3-32 3.500-22C4-12 2-4 5 0C9 3 16-1 16-8C16-14 8-14 6-6C5-2 8 2 14 0"/><path d="M19-11C20-4 23 0 28-4L30-12C30-2 30 7 26 14C22 20 15 18 19 12C22 8 29 8 33 4"/><path d="M44 3C46-8 48-20 50-27C52-15 54-7 56-3C58-10 61-20 64-27C65-15 66-6 68 0"/><path d="M74-6C82-6 85-12 80-12C74-12 72-3 77 0C80 2 84 0 86-2"/><path d="M89-10C91-8 91-3 91 0C92-6 94-10 98-10"/><path d="M108-9C103-12 98-8 99-3C100 1 105 1 108-2"/><path d="M110-11C111-4 114 0 118-3L120-11C120-2 120 7 116 13C112 19 105 17 109 11C112 8 118 8 122 5"/></g></svg></a>
     <nav class="nav" aria-label="Principal">
       <a class="l" href="#servicios">Servicios</a>
       <a class="l" href="#precios">Precios</a>
@@ -509,5 +521,5 @@ footer a{color:var(--accent)}
   }
 })();
 </script>
-
-</body></html>
+</body>
+</html>
